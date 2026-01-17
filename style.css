@@ -1,70 +1,351 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Poppins', sans-serif;
-}
-.banner{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-image: url('Netflix-Clone/assets/netflixbackground.jpg');
-    background-size: cover;
-    background-position: center;
 
 }
-.navbar{
-    margin: 10px;
-    display:flex;
+
+main {
+    margin: 0px 0px;
+    height: 90vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.4), rgba(0, 0, 0, 0.5)), url('assets/netflixbackground.jpg');
+    background-size: cover;
+    background-color: rgba(5, 5, 5, 0.5);
+
+
+}
+
+:root {
+    --btncolor: #f62707;
+}
+
+.banner {
+    background-image: transparent;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+.navbar {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     background-image: none;
     background-color: transparent;
-    
+
 }
 
-.logo{
-    height: 40px;
-    margin: 10px;
+.logo {
+    padding-top: 62px;
+    height: 120px;
+    margin-left: 40px;
+    background-image: none;
 }
-.limg{
-    height: 40px;
-    filter: brightness(200%) contrast(1.9);
-}
-img .limage{
 
-    height: 12px;
-    width: 12px;
+.limg {
+    image-resolution: var(--btncolor);
+    height: 60px;
+    filter: brightness(70%) contrast(200);
+}
+
+.limage {
+
+    height: 8px;
+    width: 8px;
     margin-right: 8px;
 
 }
-.btn .Lang{
-    background-color: transparent;
-    height: 40px;
-    color:white;
-    border: 1px solid white;
+
+.Lang {
+    background-color: rgba(10, 9, 9, 0.55);
+    border: 1px solid rgb(224, 219, 219, 0.7);
+    height: 15px;
+    width: 65px;
+    margin-top: 0px;
+    padding: 10px 10px;
+    color: white;
     border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;    
-    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+
 }
-.btn .sign-in-btn{
-    padding: 8px 16px;
-    background-color: #e50914;
+
+.sign-in-btn {
+    height: 20px;
+    width: 60px;
+    padding: 8px 20px;
+    background-color: var(--btncolor);
     color: white;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 8px;
+    font-size: 18px;
     cursor: pointer;
 }
 
 
 
-.nav-links{
+.nav-links {
+
     display: flex;
     flex-direction: row;
     gap: 20px;
     margin-right: 20px;
+    color: white;
+}
+
+.container {
+    background-color: transparent;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.para1a {
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.para1b {
+    margin-left: 30%;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.para2a1 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.para2a2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.para2b {
+    color: white;
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
+
+.e-add {
+    background: transparent;
+    background-color: rgba(10, 9, 9, 0.50);
+    color: rgb(243, 238, 238);
+    border: 6px transparent rgb(235, 233, 233);
+    border-radius: 8px;
+    border-style: double;
+    font-size: 12px;
+    height: 40px;
+    width: 300px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+::placeholder {
+    color: rgb(237, 231, 231);
+    font-size: 15px;
+    text-align: center;
+}
+
+.start {
+    color: white;
+    height: 50px;
+    width: 120px;
+    padding: 10px 20px;
+    background-color: var(--btncolor);
+    border-radius: 8px;
+    cursor: grab;
+
+
+}
+
+.ldiv {
+    height: 5px;
+    width: 100vw;
+    background-color: rgb(92, 90, 91);
+
+}
+
+@media (max-width: 600px) {
+    main {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('assets/netflixbackground.jpg');
+
+    }
+
+    .nav-links {
+        width: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .Lang {
+
+        width: 50px;
+        align-self: center;
+    }
+
+    .divpara3 {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .start {
+        height: 18px;
+        width: 90px;
+        margin: 20px;
+    }
+
+    .para1a {
+
+        margin-left: 30vw;
+
+    }
+}
+
+/* Movies Section Styles */
+.movies-section {
+    padding: 40px 60px;
+    background-color: #000;
+    color: white;
+
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.movies-container {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    margin: 20px;
+}
+
+.movies-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, and Opera */
+}
+
+.movie-card {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    border: 30px solid rgba(244, 239, 239 0.7);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.movie-card img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.second {
+    height: auto;
+    width: 100vw;
+    background-color: #000;
+}
+
+.m-head0 {
+    margin-left: 62px;
+    margin-right: 60px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sec-div {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+
+    gap: 15px;
+
+
+
+}
+
+.sec-divA {
+    background-color: color-mix(in srgb, rgb(29, 29, 163) 50%, violet 30%, black 20%);
+    height: 250px;
+    width: 465px;
+    padding: 10px;
+    border: 5px transparent white;
+    border-radius: 10px;
+}
+
+.m-head {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.spara {
+    font-size: 18px;
+    color: white;
+}
+
+.dimg {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 60px;
+    left: 80%;
+}
+
+.third {
+    background-color: black;
+    width: 100vw;
+    height: 500px;
+}
+
+@media (max-width: 600px) {
+    .movies-section {
+        padding: 20px 20px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .movie-card {
+        width: 150px;
+        height: 225px;
+    }
 }

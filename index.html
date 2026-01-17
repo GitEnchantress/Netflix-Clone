@@ -1,40 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Netflix</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#tv">TV Shows</a></li>
-                <li><a href="#movies">Movies</a></li>
-                <li><a href="#new">New & Popular</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
-        <section class="hero">
-            <h1>Featured Movie</h1>
-            <p>Watch the latest and greatest content</p>
-            <button class="btn btn-play">Play</button>
-            <button class="btn btn-info">More Info</button>
-        </section>
 
-        <section class="content">
-            <h2>Trending Now</h2>
-            <div class="movie-grid" id="trending">
-                <!-- Movies will be added here -->
+        <div class="banner">
+            <nav class="navbar">
+                <div class="logo">
+                    <img class="limg" src="assets/netlogo.png" alt="Netflix Logo">
+                </div>
+                <div class="nav-links">
+                    <btn class="Lang"> English </btn>
+                    <btn class="sign-in-btn">Sign In</btn>
+                </div>
+
+            </nav>
+
+            <div class="container">
+                <div class="divpara1">
+                    <p class="para1a">
+                        Unlimited movies, shows,</p>
+                    <p class="para1b">and more
+                    </p>
+                </div>
+                <div class="divpara2">
+                    <p class="para2a1">
+                        Starts at ₹149. Cancel at any time.
+                    </p>
+                </div>
+                <div class="divpara3">
+                    <p class="para2a2">
+                        Ready to watch? Enter your email to create or restart your
+                    </p>
+                    <p class="para2b">
+                        membership.
+                    </p>
+                </div>
+                <div class="divpara3">
+                    <input type="text" class="e-add" placeholder="Email Address">
+                    <btn class="start">Get Started</btn>
+                </div>
+
             </div>
-        </section>
+        </div>
+
     </main>
 
-    <script src="script.js"></script>
+    <section class="first">
+        <div class="ldiv">
+        </div>
+        <div class="movies-section">
+            <div class="movies-container">
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/200x300/333333/ffffff?text=Movie+1" alt="Movie 1">
+                </div>
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/200x300/444444/ffffff?text=Movie+2" alt="Movie 2">
+                </div>
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/200x300/555555/ffffff?text=Movie+3" alt="Movie 3">
+                </div>
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/200x300/666666/ffffff?text=Movie+4" alt="Movie 4">
+                </div>
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/200x300/777777/ffffff?text=Movie+5" alt="Movie 5">
+                </div>
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/200x300/888888/ffffff?text=Movie+6" alt="Movie 6">
+                </div>
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/200x300/999999/ffffff?text=Movie+7" alt="Movie 7">
+                </div>
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/200x300/aaaaaa/ffffff?text=Movie+8" alt="Movie 8">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
