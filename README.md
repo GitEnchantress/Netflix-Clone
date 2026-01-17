@@ -1,2 +1,5 @@
 # Netflix-Clone
-This is a clone of Netflix designed using pure HTML and CSS just for learning purposes
+This is a clone of Netflix having some alterations in look, designed using pure HTML CSS and Javascript. (just for learning purposes)
+
+Author: Pragya Jyoti
+Dated: Jan, 2026
