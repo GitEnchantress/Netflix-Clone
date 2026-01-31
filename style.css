@@ -22,7 +22,7 @@ main {
 
 .banner {
     background-image: transparent;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
 
 
@@ -42,7 +42,7 @@ main {
 .logo {
     padding-top: 62px;
     height: 120px;
-    margin-left: 40px;
+    margin-left: 30px;
     background-image: none;
 }
 
@@ -172,7 +172,7 @@ main {
 .ldiv {
     height: 5px;
     width: 100vw;
-    background-color: rgb(92, 90, 91);
+    background-image: linear-gradient(to bottom right, rgb(16, 15, 16), rgb(114, 19, 129));
 
 }
 
@@ -288,19 +288,20 @@ main {
 .sec-div {
 
     display: grid;
-    grid-template-columns: 50% 50%;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 20px;
+    grid-template-columns: 40% 40%;
 
-    gap: 15px;
+    margin-top: 20px;
+    justify-items: center;
+    justify-content: center;
+    column-gap: 35px;
+    row-gap: 15px;
 
 
 
 }
 
 .sec-divA {
-    background-color: color-mix(in srgb, rgb(29, 29, 163) 50%, violet 30%, black 20%);
+    background-image: linear-gradient(to bottom right, rgb(7, 18, 79), rgb(5, 7, 19), rgb(50, 3, 50));
     height: 250px;
     width: 465px;
     padding: 10px;
@@ -317,25 +318,126 @@ main {
 }
 
 .spara {
-    font-size: 18px;
+    font-size: 17px;
     color: white;
 }
 
 .dimg {
-    height: 80px;
-    width: 80px;
+
+    height: 150px;
+    width: 150px;
+    background-size: contain;
+    filter: brightness(1.5);
     position: relative;
-    top: 60px;
-    left: 80%;
+    top: 0px;
+    left: 60%;
+
+}
+
+.dimg0 {
+
+    height: 110px;
+    width: 110px;
+    background-size: contain;
+    filter: brightness(1.2)  contrast(90px);
+    position: relative;
+    top: 30px;
+    left: 70%;
+
 }
 
 .third {
+
+    padding: 40px;
     background-color: black;
     width: 100vw;
-    height: 500px;
+    height: auto;
 }
 
-@media (max-width: 600px) {
+.m-head1 {
+
+    margin-left: 62px;
+    color: white;
+    font-size: 30px;
+}
+
+.s3div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 15px;
+    padding: 10px;
+    width: 90vw;
+    height: auto;
+    background-color: rgba(48, 45, 45, 0.1);
+}
+
+.s3divsub {
+
+    position: relative;
+    color: #fff9f9;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    height: 50px;
+    width: 70vw;
+    background-color: rgba(118, 115, 115, 0.3);
+    box-shadow: 10px 10px 30px rgb(250, 253, 253) inset;
+    opacity: 0.6;
+    border-radius: 6px;
+    animation-name: bcolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.1s;
+}
+
+
+
+@keyframes bcolor{
+    from{
+      background-image: linear-gradient(to bottom right, rgb(6, 24, 87), rgb(200, 16, 216));
+    }
+    
+    to{
+       background-image:linear-gradient(to bottom right, rgb(52, 29, 166), rgb(74, 135, 181)); 
+    }
+}
+.s3img {
+    border: 5px double rgb(242, 240, 240);
+    border-radius: 9px;
+    float: right;
+    height: 35px;
+    width: 35px;
+    transition: transform 0.5s ease;
+}
+    
+.s3img:hover {
+    transform: scale(1.4);
+}
+.fourth{
+    padding: 100px;
+    height: 300px;
+    width: 100vw;
+    background-color: #000;}
+
+.fdiv{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+
+}
+.fdiv a{
+    color: white;
+}
+
+
+
+@media (max-width: 1156px) {
     .movies-section {
         padding: 20px 20px;
     }
@@ -348,4 +450,39 @@ main {
         width: 150px;
         height: 225px;
     }
+
+    .sec-div {
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .sec-divA {
+        background-image: linear-gradient(to bottom right, rgb(7, 18, 79), rgb(5, 7, 19), rgb(50, 3, 50));
+        height: 250px;
+        width: 370px;
+        padding: 10px;
+        border: 5px transparent white;
+        border-radius: 10px;
+    }
+    .s3div {
+        
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    background-color: rgba(48, 45, 45, 0.1);}
+    
+    .fdiv{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap:5px;
+    }
+
 }
